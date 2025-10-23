@@ -15,59 +15,84 @@
 <p class="p1">&lt;!DOCTYPE html&gt;</p>
 <p class="p1">&lt;html lang="ko"&gt;</p>
 <p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1">&lt;title&gt;Happy Birthday!&lt;/title&gt;</p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: linear-gradient(135deg, #ffb6c1, #ffd700);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Pretendard', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 2.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>animation: fadeIn 2s ease-in-out;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background-color: white;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #ff4b5c;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 15px 40px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 1.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>transition: all 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>button:hover {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background-color: #ff4b5c;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>@keyframes fadeIn {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>from {opacity: 0; transform: translateY(20px);}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>to {opacity: 1; transform: translateY(0);}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1">&lt;/style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Happy Birthday 🎉&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&amp;display=swap');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Montserrat', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(-45deg, #ffb6c1, #ffd700, #ffa07a, #ff69b4);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-size: 400% 400%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: gradientMove 10s ease infinite;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes gradientMove {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>0% { background-position: 0% 50%; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>50% { background-position: 100% 50%; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>100% { background-position: 0% 50%; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 2.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: fadeIn 2s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 0.9;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>button {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #ff69b4;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #ffe6f0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: scale(1.05);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes fadeIn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>from { opacity: 0; transform: translateY(20px); }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>to { opacity: 1; transform: translateY(0); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
 <p class="p1">&lt;/head&gt;</p>
 <p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;🎉 생일을 진심으로 축하합니다 🎂&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;button id="playButton"&gt;음악 재생하기 🎵&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;audio id="bgm" src="https://drive.google.com/file/d/19tQTI7AVdgsI0bnCpbY9YcaNJRSS7HOH/view" preload="auto"&gt;&lt;/audio&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;🎂 생일을 진심으로 축하합니다! 🎉&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;오늘 하루는 당신이 주인공이에요 💕&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button id="playBtn"&gt;음악 재생하기 ▶️&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 🎵 생일 축하 노래 (Google Drive나 다른 mp3 링크로 교체 가능) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;audio id="bgm" src="https://www.w3schools.com/html/horse.mp3" preload="auto"&gt;&lt;/audio&gt;</p>
+<p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const btn = document.getElementById('playButton');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const btn = document.getElementById('playBtn');</p>
 <p class="p1"><span class="Apple-converted-space">    </span>const bgm = document.getElementById('bgm');</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>btn.addEventListener('click', async () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>await bgm.play();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bgm.play();</p>
 <p class="p1"><span class="Apple-converted-space">      </span>btn.style.display = 'none';</p>
-<p class="p1"><span class="Apple-converted-space">      </span>document.body.style.background = 'linear-gradient(135deg, #ffa07a, #ff69b4)';</p>
 <p class="p1"><span class="Apple-converted-space">    </span>});</p>
 <p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
 <p class="p1">&lt;/body&gt;</p>
