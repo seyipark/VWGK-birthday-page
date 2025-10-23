@@ -55,17 +55,41 @@
       padding: 24px 28px;
       backdrop-filter: blur(6px);
     }
-  </style>
-  <audio autoplay loop>
+  </style></style>
+
+<!-- 🎵 모바일 대응: 버튼 클릭 시 음악 재생 -->
+</style>
+
+<!-- 🎵 모바일 대응: 버튼 클릭 시 음악 재생 -->
+<audio id="bgm" loop>
   <source src="jazz-trio.mp3" type="audio/mpeg">
-  🎵 브라우저가 오디오를 지원하지 않습니다.
+  브라우저가 오디오를 지원하지 않습니다.
 </audio>
+
+<script>
+  function playMusic() {
+    const bgm = document.getElementById('bgm');
+    bgm.play().catch(() => {
+      alert("🔈 브라우저에서 자동재생이 차단되었습니다. 버튼을 눌러주세요!");
+    });
+  }
+
+  // PC 브라우저에서는 페이지 로드 시 자동 재생 시도
+  window.addEventListener('load', () => {
+    const bgm = document.getElementById('bgm');
+    bgm.play().catch(() => {
+      console.log("Auto-play blocked. Waiting for user interaction.");
+    });
+  });
+</script>
 </head>
-<body>
+
+<body onload="playMusic">
   <div class="card">
     <h1>🎉 생일 축하합니다! 🎂</h1>
     <p>오늘 하루, 행복과 좋은 일들만 가득하시길 바라요 ✨</p>
     <button onclick="alert('행복한 한 해 되세요! 💝')">메시지 보기</button>
+    <button onclick="playMusic()">🎵 음악 재생하기</button>
   </div>
 </body>
 </html>
