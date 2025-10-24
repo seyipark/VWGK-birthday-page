@@ -47,13 +47,6 @@
       box-shadow: 0 6px 18px rgba(0,0,0,.15);
     }
     button:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.18); }
-    .card {
-      background: rgba(255,255,255,.12);
-      border: 1px solid rgba(255,255,255,.22);
-      border-radius: 20px;
-      padding: 24px 28px;
-      backdrop-filter: blur(6px);
-    }
   </style></style>
 
 <!-- 🎵 모바일 대응: 버튼 클릭 시 음악 재생 -->
@@ -84,10 +77,10 @@
 </head>
 
 <body onload="playMusic">
-  <div class="card">
-    <h1>🎉 생일 축하합니다! 🎂</h1>
-    <p>오늘 하루, 행복과 좋은 일들만 가득하시길 바라요 ✨</p>
-    <button onclick="playMusic()">🎵 음악 재생하기</button>
-  </div>
+ <div>
+  <h1>🎉 생일 축하합니다! 🎂</h1>
+  <p>오늘 하루, 행복과 좋은 일들만 가득하시길 바라요 ✨</p>
+  <button onclick="playMusic()">🎵 음악 재생하기</button>
+</div>
 </body>
 </html>
